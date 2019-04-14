@@ -1,4 +1,4 @@
-## mising variable name
+## 1. mising variable name
 
 -broken code:
 ```js
@@ -23,7 +23,7 @@ A variable is missing a name. This is likely due to a syntax error in your code.
 
 ---
 
-## too-far object access
+## 2. too-far object access
 broken code:
 ```js
 let a = {b:3};
@@ -46,7 +46,7 @@ your notes:
 number 3 is not necessary because it's already declared in the previous code let a = {b:3}
 
 ---
-## access property directly
+## 3. access property directly
 broken code:
 ```js
 let x = {b:'e'};
@@ -71,7 +71,7 @@ always indent your code (and indent it correctly)
 
 ---
 
-## improper multi-line string
+## 4. improper multi-line string
 broken code:
 ```js
 let a = 'this is 
@@ -93,7 +93,7 @@ your notes:
 I haven't understand the bigger picture fo what the developer try to indent. 
 
 ---
-## improper end of statement
+## 5. improper end of statement
 broken code:
 ```js
 let a = 1:
@@ -114,7 +114,7 @@ your notes:
 end of statement use this ';'
 
 ---
-## malformed array
+## 6. malformed array
 broken code:
 ```js
 let myArray = [1, 2, 3;
@@ -134,7 +134,7 @@ let myArray = [1, 2, 3];
 your notes:
 
 ---
-## missing arguments
+## 7. missing arguments
 broken code:
 ```js
 function getNine {
@@ -157,10 +157,8 @@ the fix:
 ```
 your notes:
 
-[TOP](#errors)
-
 ---
-## improper nested quotes 1
+## 8. improper nested quotes 1
 broken code:
 ```js
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
@@ -178,10 +176,9 @@ the fix:
 ```
 your notes:
 
-[TOP](#errors)
 
 ---
-## improper nested quotes 2 
+## 9. improper nested quotes 2 
 broken code:
 ```js
 let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
@@ -191,18 +188,16 @@ error message:
 SyntaxError: Unexpected string
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
 ```
 your notes:
 
-[TOP](#errors)
-
 ---
-## reassigning to constant
+## 10. reassigning to constant
 broken code:
 ```js
 const a = 9;
@@ -220,10 +215,8 @@ the fix:
 ```
 your notes:
 
-[TOP](#errors)
-
 ---
-## unassigned const declaration
+## 11. unassigned const declaration
 broken code:
 ```js
 const a;
@@ -242,10 +235,8 @@ the fix:
 ```
 your notes:
 
-[TOP](#errors)
-
 ---
-## is not a function
+## 12. is not a function
 broken code:
 ```js
 let array = [];
@@ -263,12 +254,6 @@ the fix:
 ```js
 ```
 your notes:
-
-
-
-[TOP](#errors)
-
-
 
 ___
 ___
