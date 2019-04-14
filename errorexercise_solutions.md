@@ -34,7 +34,7 @@ error message:
 SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
+* creation phase
 * syntax
 
 the fix:
@@ -112,7 +112,6 @@ let a = 1;
 your notes:
 end of statement use this ';'
 
-
 ---
 ## malformed array
 broken code:
@@ -124,8 +123,8 @@ error message:
 SyntaxError: Unexpected token ;
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
@@ -149,8 +148,8 @@ error message:
 SyntaxError: Unexpected token function
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax 
 
 the fix:
 ```js
@@ -166,7 +165,8 @@ broken code:
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
 * creation phase or execution phase ?
@@ -186,7 +186,8 @@ broken code:
 let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected string
 ```
 classification:
 * creation phase or execution phase ?
@@ -228,7 +229,8 @@ const a;
 a = 0;
 ```
 error message:
-```
+```js
+SyntaxError: Missing initializer in const declaration
 ```
 classification:
 * creation phase or execution phase ?
@@ -249,10 +251,11 @@ let array = [];
 array.length()
 ```
 error message:
-```
+```js
+TypeError: array.length is not a function
 ```
 classification:
-* creation phase or execution phase ?
+* execution phase ?
 * syntax or semanitc ?
 
 the fix:
