@@ -57,8 +57,8 @@ error message:
 SyntaxError: Unexpected end of input
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
@@ -66,6 +66,7 @@ let x = {b:'e'};
 let y = x;
 ```
 your notes:
+To tell that y has the same value as x
 always indent your code (and indent it correctly)
 
 ---
