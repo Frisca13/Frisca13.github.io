@@ -202,3 +202,8 @@ var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 
 ## Escape Sequences in Strings
 ```js
+var myStr = "FirstLine\n\t\\"+"SecondLine\n"+"ThirdLine";
+```
+
+## Concatenating Strings with Plus Operator
+```js
