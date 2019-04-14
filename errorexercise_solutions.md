@@ -9,7 +9,7 @@ var = 5;
 SyntaxError: Unexpected token =
 ```
 
--classification:
+classification:
 Creation phase
 Syntax
 
@@ -43,7 +43,7 @@ let a = {b:3};
 let b = a.b;3
 ```
 your notes:
-
+number 3 is not necessary because it's already declared in the previous code let a = {b:3}
 
 ---
 ## access property directly
