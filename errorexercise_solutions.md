@@ -172,9 +172,10 @@ classification:
 
 the fix:
 ```js
-```
-your notes:
+let innerHtml = '<p>Click here to <a href="#Home">return home</a></p>';
 
+```
+your notes: 
 
 ---
 ## 9. improper nested quotes 2 
@@ -192,6 +193,7 @@ classification:
 
 the fix:
 ```js
+let nested_messages = 'remind yourself \'i can do this\'at least once a day';
 ```
 your notes:
 
