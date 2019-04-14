@@ -87,10 +87,9 @@ classification:
 
 the fix:
 ```js
-let a = 'this is two lines';
+let a = 'this is\ntwo lines'
 ```
 your notes:
-I haven't understand the bigger picture fo what the developer try to indent. 
 
 ---
 ## 5. improper end of statement
@@ -168,8 +167,8 @@ error message:
 SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
@@ -204,11 +203,12 @@ const a = 9;
 a = 0;
 ```
 error message:
-```
+```js
+typeError: Assignment to constant variable.
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* execution phase
+* semantic
 
 the fix:
 ```js
@@ -227,8 +227,8 @@ error message:
 SyntaxError: Missing initializer in const declaration
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
@@ -248,7 +248,7 @@ TypeError: array.length is not a function
 ```
 classification:
 * execution phase ?
-* syntax or semanitc ?
+* semantic ?
 
 the fix:
 ```js
