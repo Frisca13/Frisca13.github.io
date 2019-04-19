@@ -426,3 +426,403 @@ myArray.push(["dog", 3]);
 
 ## Manipulate Arrays With pop()
 ```js
+// Example
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop(); 
+// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.pop();
+```
+
+## Manipulate Arrays With shift()
+```js
+// Example
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.shift();
+```
+
+## Manipulate Arrays With unshift()
+```js
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+myArray.unshift(["Paul",35])
+```
+
+## Shopping List
+```js
+var myList = [["rice", 5] , ["bread", 6] , ["cake", 7], [ "quinoa", 9], ["potato", 20]];
+```
+
+## Write Reusable JavaScript with Functions
+```js
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
+```
+
+## 47.Passing Values to Functions with Arguments
+```js
+// Example
+function ourFunctionWithArgs(a, b) {
+  console.log(a - b);
+}
+ourFunctionWithArgs(10, 5); // Outputs 5
+
+// Only change code below this line.
+function functionWithArgs (a , b) {
+console.log(a + b);
+}
+functionWithArgs (1 , 2);
+functionWithArgs (7 , 9);
+```
+## 48. Global Scope and Functions
+```js
+// Declare your variable here
+
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+var myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;
+}
+```
+
+## 49. Local Scope and Functions
+```js
+function myLocalScope() {
+var myVar = 'use strict';
+}
+myLocalScope();
+```
+
+## 50. Global vs. Local Scope in Functions
+```js
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  
+  
+  
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
+```
+
+## 51. Return a Value from a Function with Return
+```js
+// Example
+function minusSeven(num) {
+  return num - 7;
+}
+
+// Only change code below this line
+function timesFive (num) {
+  return num * 5;
+}
+timesFive(5);
+timesFive(2);
+timesFive(0);
+
+
+console.log(minusSeven(10));
+```
+
+## 52. Understanding Undefined Value returned from a Function
+```js
+// Example
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+
+
+
+// Only change code above this line
+var returnedValue = addFive();
+function addFive() {
+  sum = sum + 5;
+}
+```
+
+## 53. Assignment with a Returned Value
+```js
+// Example
+var changed = 0;
+
+function change(num) {
+  return (num + 5) / 3;
+}
+
+changed = change(10);
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+```
+
+## 54. Stand in Line
+```js
+function nextInLine(arr, item) {
+  // Your code here
+    arr.push(item);
+    return  arr.shift();   // Change this line
+}
+
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 10) ,testArr[4]); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
+```
+
+## 55. Understanding Boolean Values
+```js
+function welcomeToBooleans() {
+return true;
+}
+```
+
+## 56. Use Conditional Logic with If Statements
+```js
+// Example
+function ourTrueOrFalse(isItTrue) {
+  if (isItTrue) { 
+    return "Yes, it's true";
+  }
+  return "No, it's false";
+}
+
+// Setup
+function trueOrFalse(wasThatTrue) {
+
+  // Only change code below this line.
+
+    if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+
+  // Only change code above this line.
+// Change this value to test
+trueOrFalse(true);
+```
+
+## 57. Comparison with the Equality Operator
+```js
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testEqual(12);
+```
+
+## 58. Comparison with the Strict Equality Operator
+```js
+// Setup
+function testStrict(val) {
+  if (val === 7) {// Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testStrict(10);
+```
+
+## 59. Practice comparing different values
+```js
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+compareEquality(10, "10")
+```
+
+## 60. Comparison with the Inequality Operator
+```js
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testNotEqual(10);
+```
+
+## 61. Comparison with the Strict Inequality Operator
+```js
+// Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val !== 17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testStrictNotEqual(10);
+```
+
+## 62. Comparison with the Greater Than Operator
+```js
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+// Change this value to test
+testGreaterThan(10);
+```
+
+## 63. Comparison with the Greater Than Or Equal To Operator
+```js
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+  
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+// Change this value to test
+testGreaterOrEqual(10);
+```
+
+## 64. Comparison with the Less Than Operator
+```js
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+  
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+// Change this value to test
+testLessThan(10);
+```
+
+## 65. Comparison with the Less Than Or Equal To Operator
+```js
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+  
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+// Change this value to test
+testLessOrEqual(10);
+```
+
+## 66. Comparisons with the Logical And Operator
+```js
+function testLogicalAnd(val) {
+  // Only change code below this line
+  if (val >= 25 && val <= 50) {
+      return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+// Change this value to test
+testLogicalAnd(10);
+```
+
+## 67. Comparisons with the Logical Or Operator
+```js
