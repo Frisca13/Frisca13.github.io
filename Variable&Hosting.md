@@ -1,2 +1,95 @@
-[Parsonizer](https://janke-learning.github.io/parsonizer/?snippet=if%20%28false%29%20%7B%0A%20%20console.log%28%22never%22%29%3B%0A%7D)
-[PythonTutor](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%22c%22,%20b%20%3D%20%22a%22,%20c%20%3D%20%22b%22%3B%0Alet%20_%20%3D%20'%20'%3B%0A%0A_%20%3D%20c%3B%0Ac%20%3D%20a%3B%0Aa%20%3D%20b%3B%0Ab%20%3D%20_%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+## WITHOUT EXTRA HOLDER VARIABLES:
+
+# 1. the toad reads me
+
+```js
+let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
+// the  // if
+  _1 = 'i', _2 = 'f', _3 = ' ', _4 = ' ', _5 = ' ';
+  // fir
+  _1 = _2 , _2 = 'i' , _3 = 'r', _4 = ' ', _5 = ' ';
+
+  // trees
+  _1 = 't' , _2 = _3, _3 = 'e', _4 = _3, _5 = 's';
+
+  // ever
+  _4 = _2, _1 = _3 , _2 = 'v', _3 = _1 , _5 = '';
+
+  // fall
+  _1 = 'f' , _2 = 'a', _3 = 'l', _4 = _3, _5 = ' ';
+_1 = "t", _2 = "h", _3 = "e";
+// toad
+_2 = "o", _3 = "a", _4 = "d";
+// reads
+_1 = "r", _2 = "e", _5 = "s";
+// me
+_1 = "m", _3 = " ", _4 = " ", _5 = " ";
+```
+
+# 2. eating meat every meal
+```js
+    // eating
+    _1 = "e" , _2 = "a" , _3 = "t" , _4 = "i" , _5 = "n" , _6 = "g";
+    // meat
+    _4 = _3 , _3 = _2 , _2 = _1, _1 = "m" , _5 = " " , _6 = " ";
+    // every
+    _1 = _2, _2 = "v" , _3 = _1 , _4 = "r", _5 = "y" , _6 = " ";
+    // meal
+    _2 = _1 , _1 = "m", _3 = "a", _4 = "l", _5 = " ";
+  ```
+  
+  # 3. many men may melt my mind
+  ```js
+    // many
+  _1 = "m" , _2 = "a", _3 = "n" , _4 = "y";
+  // men
+  _2 = "e", _3 = "n" , _4 = " ";
+  // may
+  _2 = "a", _3 = "y" , _4 = " ";
+
+  // melt
+  _2 = "e", _3 = "l" , _4 = "t";
+
+  // my
+  _2 = "y", _3 = " " , _4 = " ";
+
+  // mind
+  _2 = "i", _3 = "n" , _4 = "d";
+  ```
+  
+  # 4. if fir trees ever fall
+  ```js
+    // if
+  _1 = 'i', _2 = 'f', _3 = ' ', _4 = ' ', _5 = ' ';
+  // fir
+  _1 = _2 , _2 = 'i' , _3 = 'r', _4 = ' ', _5 = ' ';
+
+  // trees
+  _1 = 't' , _2 = _3, _3 = 'e', _4 = _3, _5 = 's';
+
+  // ever
+  _4 = _2, _1 = _3 , _2 = 'v', _3 = _1 , _5 = '';
+
+  // fall
+  _1 = 'f' , _2 = 'a', _3 = 'l', _4 = _3, _5 = ' ';
+  ```
+  
+  ## WITH EXTRA HOLDER VARIABLES
+  
+  # 1. the toad reads me
+  ```js
+  // the
+_1 = "t", _2 = "h", _3 = "e";
+
+// toad
+x = _2 , _2 = "o", y = _3,  _3 = "a", _4 = "d";
+
+// reads
+_1 = "r", _2 = y , _5 = "s", x = ' ', y = ' ';
+
+// me
+_1 = "m",  _3 = " ", _4 = " ", _5 = " ", x = ' ', y = ' ';
+```
+
+# 2. eating meat every meal
+  
