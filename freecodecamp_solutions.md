@@ -947,3 +947,196 @@ return "Hole-in-one!";
 
 golfScore(5, 4);
 ```
+
+# WEEK 2
+
+## 73. Selecting from Many Options with Switch Statements
+```js
+function caseInSwitch(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+  case 1:
+    return "alpha";
+    break;
+  case 2:
+    return "beta";
+    break;
+  case 3:
+    return "gamma";
+    break;
+     case 4:
+   return "delta";
+    break;
+}
+  // Only change code above this line  
+  return answer;  
+}
+
+// Change this value to test
+caseInSwitch(1);
+caseInSwitch(2);
+caseInSwitch(3);
+caseInSwitch(4);
+```
+
+## 74. Adding a Default Option in Switch Statements
+```js
+function switchOfStuff(val) {
+  var answer = "";
+    switch(val) {
+  case "a":
+    answer = "apple";
+    break;
+  case "b":
+    answer = "bird";
+    break;
+  case "c":
+    answer = "cat";
+    break;
+  default:
+   answer = "stuff";
+}
+
+  return answer;
+}
+
+switchOfStuff(1);
+```
+
+## 75. Multiple Identical Options in Switch Statements
+```js
+ function sequentialSizes(val) {
+  var answer = "";
+  switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    answer = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    answer = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer = "High";
+}
+  return answer;
+}
+
+sequentialSizes(1);
+
+```
+
+## 76. Replacing If Else Chains with Switch
+```js
+function chainToSwitch(val) {
+  var answer = "";
+
+  switch(val) {
+  case "bob":
+    answer = "Marley";
+    break;
+  case 42:
+    answer = "The Answer";
+    break;
+  case 1:
+    answer = "There is no #1";
+    break;
+  case 99:
+    answer = "Missed me by this much!";
+    break;
+  case 7:
+    answer = "Ate Nine";
+    break;
+  default:
+    answer = "";
+    break;
+}
+
+  return answer;
+}
+
+chainToSwitch(7);
+```
+
+## 77. Returning Boolean Values from Functions
+```js
+function isLess(a, b) {
+  // Fix this code
+
+  return a < b;
+}
+
+// Change these values to test
+isLess(10, 15);
+```
+
+## 78. Return Early Pattern for Functions
+```js
+function abTest(a, b) {
+ if (a < 0 || b < 0) {
+   return undefined;
+ }else{
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+}
+abTest(2,2);
+```
+
+## 79. Counting Cards
+```js
+var count = 0;
+function cc(card) {
+switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  if (count > 0){
+    return count + " Bet";
+  } else {
+    return count + " Hold";
+  }
+}var count = 0; 
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+```
+
+## 80. Build Javascript Object
+```js
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+// Only change code below this line.
+
+var myDog = {
+    "name": "Brownie",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["me"]
+};
+```
+
+## 81. Accessing Object Properties with Dot Notation
+```js
