@@ -1,13 +1,13 @@
 Exercise 1 JS
 
-## How to write comments
+## 1. How to write comments
 ```js
 //abcde//
 /*abcde*/
 ```
 I know how to write comments
 
-## Declare JavaScript Variables
+## 2. Declare JavaScript Variables
 ```js
 // Example
 var ourName;
@@ -16,7 +16,7 @@ var ourName;
 var myName;
 ```
 
-## Storing Values with the Assignment Operator
+## 3. Storing Values with the Assignment Operator
 ```js
 // Setup
 var a;
@@ -28,7 +28,7 @@ var b = 7;
 b = a;
 ```
 
-## Initializing Variables with the Assignment Operator
+## 4. Initializing Variables with the Assignment Operator
 ```js
 // Example
 var ourVar = 19;
@@ -37,7 +37,7 @@ var ourVar = 19;
 var a = 9;
 ```
 
-## Understanding Uninitialized Variables
+## 5. Understanding Uninitialized Variables
 ```js
 // Initialize these three variables
 var a = 5;
@@ -51,7 +51,7 @@ b = b + 5;
 c = c + " String!";
 ```
 
-## Understanding Case Sensitivity in Variables
+## 6. Understanding Case Sensitivity in Variables
 ```js
 // Declarations
 var studlyCapVar;
@@ -64,27 +64,27 @@ var properCamelCase = "A String";
 var titleCaseOver = 9000;
 ```
 
-## Add Two Numbers with JavaScript
+## 7. Add Two Numbers with JavaScript
 ```js
 var sum = 10 + 10;
 ```
 
-## Subtract One Number from Another with JavaScript
+## 8. Subtract One Number from Another with JavaScript
 ```js
 var difference = 45 - 33;
 ```
 
-## Multiply Two Numbers with JavaScript
+## 9. Multiply Two Numbers with JavaScript
 ```js
 var product = 8 * 10;
 ```
 
-## Divide One Number by Another with JavaScript
+## 10. Divide One Number by Another with JavaScript
 ```js
 var quotient = 66 / 33;
 ```
 
-## Increment a Number with JavaScript
+## 11. Increment a Number with JavaScript
 ```js
 var myVar = 87;
 
@@ -92,7 +92,7 @@ var myVar = 87;
 var myVar = 87;myVar++;
 ```
 
-## Decrement a Number with JavaScript
+## 12. Decrement a Number with JavaScript
 ```js
 var myVar = 11;
 
@@ -100,7 +100,7 @@ var myVar = 11;
 var myVar = 1
 ```
 
-## Create Decimal Numbers with JavaScript
+## 13. Create Decimal Numbers with JavaScript
 ```js
 var ourDecimal = 5.7;
 
@@ -108,26 +108,26 @@ var ourDecimal = 5.7;
 var myDecimal = 5.7;
 ```
 
-## Multiply Two Decimals with JavaScript
+## 14. Multiply Two Decimals with JavaScript
 ```js
 var product = 2.0 * 0.0;
 //my fix//
 var product = 1.0 * 5.0;
 ```
 
-## Divide One Decimal by Another with JavaScript
+## 15. Divide One Decimal by Another with JavaScript
 ```js
 var quotient = 4.4 / 2.0
 ```
 
-## Finding a Remainder in JavaScript
+## 16. Finding a Remainder in JavaScript
 ```js
 // Only change code below this line
 
 var remainder = 11 % 3;
 ```
 
-## Compound Assignment With Augmented Addition
+## 17. Compound Assignment With Augmented Addition
 ```js
 var a = 3;
 var b = 17;
@@ -140,7 +140,7 @@ b += 9;
 c += 7;
 ```
 
-## nted Subtraction
+## 18. nted Subtraction
 ```js
 var a = 11;
 var b = 9;
@@ -153,7 +153,7 @@ b -= 15;
 c -= 1;
 ```
 
-## Compound Assignment With Augmented Multiplication
+## 19. Compound Assignment With Augmented Multiplication
 ```js
 var a = 5;
 var b = 12;
@@ -166,7 +166,7 @@ b *= 3;
 c *= 10;
 ```
 
-## Compound Assignment With Augmented Division
+## 20. Compound Assignment With Augmented Division
 ```js
 var a = 48;
 var b = 108;
@@ -179,7 +179,7 @@ b /= 4;
 c /= 11;
 ```
 
-## Declare String Variables
+## 21. Declare String Variables
 ```js
 // Example
 var firstName = "Alan";
@@ -190,22 +190,22 @@ var myFirstName = "Frisca"
 var myLastName = "Julia"
 ```
 
-## Escaping Literal Quotes in Strings
+## 22. Escaping Literal Quotes in Strings
 ```js
 var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 ```
 
-## Quoting Strings with Single Quote
+## 23. Quoting Strings with Single Quote
 ```js
 var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
 
-## Escape Sequences in Strings
+## 34. Escape Sequences in Strings
 ```js
 var myStr = "FirstLine\n\t\\"+"SecondLine\n"+"ThirdLine";
 ```
 
-## Concatenating Strings with Plus Operator
+## 35. Concatenating Strings with Plus Operator
 ```js
 // Example
 var ourStr = "I come first. ";
@@ -217,7 +217,7 @@ var myStr = "This is the first sentence. " ;
 myStr += "This is the second sentence.";
 ````
 
-## Constructing Strings with Variables
+## 26. Constructing Strings with Variables
 ```js
 // Example
 var ourName = "freeCodeCamp";
@@ -228,7 +228,7 @@ var myName = "Frisca ";
 var myStr = "My name is " + myName + " and I am well!";
 ```
 
-## Appending Variables to Strings
+## 27. Appending Variables to Strings
 ```js
 // Example
 var anAdjective = "awesome!";
@@ -242,7 +242,7 @@ var myStr = "Learning to code is";
 myStr += someAdjective;
 ```
 
-## Find the Length of a String
+## 28. Find the Length of a String
 ```js
 // Example
 var firstNameLength = 0;
@@ -262,7 +262,7 @@ lastName = "Cordelia";
 lastNameLength = lastName.length;
 ```
 
-## Use Bracket Notation to Find the First Character in a String
+## 29. Use Bracket Notation to Find the First Character in a String
 ```js
 // Example
 var firstLetterOfFirstName = "";
@@ -281,7 +281,7 @@ var lastName = "L";
 firstLetterOfLastName = lastName[0];
 ```
 
-## Understand String Immutability
+## 30. Understand String Immutability
 ```js
 // Setup
 var myStr = "Jello World";
@@ -293,7 +293,7 @@ myStr= "H";
 myStr = "Hello World";
 ```
 
-## Use Bracket Notation to Find the Nth Character in a String
+## 31. Use Bracket Notation to Find the Nth Character in a String
 ```js
 // Example
 var firstName = "Ada";
@@ -308,7 +308,7 @@ var thirdLetterOfLastName = lastName[2];
 var lastName = "Lovelace";
 ```
 
-## Use Bracket Notation to Find the Last Character in a String
+## 32. Use Bracket Notation to Find the Last Character in a String
 ```js
 // Example
 var firstName = "Ada";
@@ -323,7 +323,7 @@ var lastLetterOfLastName = lastName[lastName.length -1];
 var lastName = "Lovelace"
 ```
 
-## Use Bracket Notation to Find the Nth-to-Last Character in a String
+## 33. Use Bracket Notation to Find the Nth-to-Last Character in a String
 ```js
 // Example
 var firstName = "Ada";
@@ -339,7 +339,7 @@ var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
 var lastName = "Lovelace";
 ```
 
-## Word Blanks
+## 34. Word Blanks
 ```js
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   // Your code below this line
@@ -353,7 +353,7 @@ result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
 wordBlanks("dog", "big", "ran", "quickly");
 ```
 
-## Store Multiple Values in one Variable using JavaScript Arrays
+## 35. Store Multiple Values in one Variable using JavaScript Arrays
 ```js
 // Example
 var ourArray = ["John", 23];
@@ -362,7 +362,7 @@ var ourArray = ["John", 23];
 var myArray = ["array", 13];
 ```
 
-## Nest one Array within Another Array
+## 36. Nest one Array within Another Array
 ```js
 // Example
 var ourArray = [["the universe", 42], ["everything", 101010]];
@@ -371,7 +371,7 @@ var ourArray = [["the universe", 42], ["everything", 101010]];
 var myArray = [["Bulls",23], ["White Sox", 45]];
 ```
 
-## Access Array Data with Indexes
+## 37. Access Array Data with Indexes
 ```js
 var ourArray = [50,60,70];
 var ourData = ourArray[0]; // equals 50
@@ -386,7 +386,7 @@ var myData = myArray[0];
 var myArray = [50,60,70];
 ```
 
-## Modify Array Data With Indexes
+## 38. Modify Array Data With Indexes
 ```js
 // Example
 var ourArray = [18,64,99];
@@ -401,7 +401,7 @@ myArray[0] = 45;
 var myArray = [45,64,99];
 ```
 
-## Access Multi-Dimensional Arrays With Indexes
+## 39. Access Multi-Dimensional Arrays With Indexes
 ```js
 // Setup
 var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
@@ -410,7 +410,7 @@ var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 var myData = myArray[2][1];
 ```
 
-## Manipulate Arrays With push()
+## 40. Manipulate Arrays With push()
 ```js
 // Example
 var ourArray = ["Stimpson", "J", "cat"];
@@ -424,7 +424,7 @@ var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog", 3]);
 ```
 
-## Manipulate Arrays With pop()
+## 41. Manipulate Arrays With pop()
 ```js
 // Example
 var ourArray = [1,2,3];
@@ -438,7 +438,7 @@ var myArray = [["John", 23], ["cat", 2]];
 var removedFromMyArray = myArray.pop();
 ```
 
-## Manipulate Arrays With shift()
+## 42. Manipulate Arrays With shift()
 ```js
 // Example
 var ourArray = ["Stimpson", "J", ["cat"]];
@@ -452,7 +452,7 @@ var myArray = [["John", 23], ["dog", 3]];
 var removedFromMyArray = myArray.shift();
 ```
 
-## Manipulate Arrays With unshift()
+## 43. Manipulate Arrays With unshift()
 ```js
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
@@ -460,12 +460,12 @@ myArray.shift();
 myArray.unshift(["Paul",35])
 ```
 
-## Shopping List
+## 44. Shopping List
 ```js
 var myList = [["rice", 5] , ["bread", 6] , ["cake", 7], [ "quinoa", 9], ["potato", 20]];
 ```
 
-## Write Reusable JavaScript with Functions
+## 45. Write Reusable JavaScript with Functions
 ```js
 function reusableFunction() {
   console.log("Hi World");
