@@ -153,8 +153,15 @@ classification:
 
 the fix:
 ```js
+function getNine () {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+let result = getNine();
 ```
 your notes:
+Brackets for param is missing
 
 ---
 ## 8. improper nested quotes 1
@@ -214,6 +221,7 @@ classification:
 
 the fix:
 ```js
+const a = 9;
 ```
 your notes:
 
@@ -234,8 +242,10 @@ classification:
 
 the fix:
 ```js
+const a = 0;
 ```
 your notes:
+Must specify it's value in the same statement in that is declared 
 
 ---
 ## 12. is not a function
@@ -254,6 +264,8 @@ classification:
 
 the fix:
 ```js
+let array = [];
+array.length;
 ```
 your notes:
 
